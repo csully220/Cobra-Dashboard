@@ -21,7 +21,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     QWidget *mainWidget = new CGaugeClusterWidget();
 
-
     setCentralWidget(mainWidget);
 }
 

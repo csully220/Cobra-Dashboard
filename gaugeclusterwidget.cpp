@@ -12,10 +12,10 @@ CGaugeClusterWidget::CGaugeClusterWidget(QWidget *parent)
     QGridLayout *layout = new QGridLayout;
     fuel_gauge = new CGaugeWidget(this);
     lbl = new QLabel(this);
-    lbl->setText(QString("def"));
+    lbl->setText(QString("COBRA DASH LABEL"));
 
-    //layout->addWidget(fuel_gauge, 0, 0, Qt::AlignLeft);
-    //layout->addWidget(lbl, 1, 0, Qt::AlignLeft);
+    layout->addWidget(fuel_gauge, 0, 0, Qt::AlignLeft);
+    layout->addWidget(lbl, 1, 0, Qt::AlignLeft);
 
     setLayout(layout);
     QTimer *timer = new QTimer(this);
@@ -32,8 +32,6 @@ CGaugeClusterWidget::CGaugeClusterWidget(QWidget *parent)
 
     int frame_dt = 50; // milliseconds
     timer->start(frame_dt);
-
-
 
 }
 
